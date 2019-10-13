@@ -15,8 +15,8 @@ export class FinancialChartOverviewComponent {
 
     constructor(private dataService: FinancialDataService) {
         this.stocksData = [
-            this.dataService.getTsla(),
-            this.dataService.getGoog()
+            this.dataService.getTsla()
+            //this.dataService.getGoog()
         ];
         this.calloutsData = this.getCallouts(this.stocksData);
     }
